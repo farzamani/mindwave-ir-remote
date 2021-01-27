@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.pwittchen:neurosky-android-sdk:0.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58375e424afb0df4a4d664785d7b0133/jetified-neurosky-android-sdk-0.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58375e424afb0df4a4d664785d7b0133/jetified-neurosky-android-sdk-0.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58375e424afb0df4a4d664785d7b0133/jetified-neurosky-android-sdk-0.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58375e424afb0df4a4d664785d7b0133/jetified-neurosky-android-sdk-0.0.2/jars/libs/ThinkGear.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pwittchen/neurosky-android-sdk/0.0.2/e8459ea20e4cb407ec4a6e2f92ca1b6fb48d9bdf/neurosky-android-sdk-0.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pwittchen/neurosky-android-sdk/0.0.2/b7d6665d4b9caa2d47a53acdc20775be7655ab62/neurosky-android-sdk-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

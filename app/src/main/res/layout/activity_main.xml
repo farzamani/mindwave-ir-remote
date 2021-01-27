@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_red"
+            android:text="Connect"
+            android:minWidth="130dp"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_connect"
+            android:backgroundTint="@color/dark_red"
+            android:text="Disconnect"
+            android:minWidth="130dp"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_connect"
+            android:backgroundTint="@color/dark_red"
+            android:text="Start Monitoring"
+            android:minWidth="190dp"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start"
+            android:layout_toEndOf="@id/btn_disconnect"
+            android:backgroundTint="@color/dark_red"
+            android:text="Stop Monitoring"
+            android:minWidth="190dp"
+            android:layout_margin="3dp"/>
+
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="3dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/dodger_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_power"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_power"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_left"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_right"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_ok"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_up"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_down"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_volume_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="10"
+                android:src="@drawable/ic_volume_down" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_volume_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="10"
+                android:src="@drawable/ic_volume_up" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/light_blue"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_idle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="10"
+                android:src="@drawable/ic_idle" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/light_blue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="STATE: " />
+
+            <TextView
+                android:id="@+id/text_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_state"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="ATTENTION: " />
+
+            <TextView
+                android:id="@+id/text_meditation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_attention"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="MEDITATION: " />
+
+            <TextView
+                android:id="@+id/text_blink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_meditation"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="BLINK STRENGTH: " />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:barrierDirection="left" />
+
+
+</LinearLayout>
